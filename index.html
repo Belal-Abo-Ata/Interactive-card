@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg">
+        <div class="card-back"><span>000</span></div>
+        <div class="card-front">
+          <img src="./images/card-logo.svg" class="card-logo" alt="Card Logo" />
+          <p class="card-number">
+            <span>0000</span>
+            <span>0000</span>
+            <span>0000</span>
+            <span>0000</span>
+          </p>
+          <div class="card-info">
+            <p class="name">Jane appleseed</p>
+            <p class="time">00/00</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-container">
+        <form class="form form-complete hide">
+          <img src="./images/icon-complete.svg" alt="Complete" />
+          <h1>Thank You!</h1>
+          <p>We've added your card details</p>
+          <button type="submit" id="submit">Continue</button>
+        </form>
+        <form class="form form-current">
+          <div class="input-parent">
+            <label for="user">cardholder name</label>
+            <div class="input">
+              <input
+                type="text"
+                id="user"
+                maxlength="25"
+                placeholder="e.g Jane Appleseed"
+              />
+            </div>
+            <p class="validation">Please Enter a value</p>
+          </div>
+          <div class="input-parent">
+            <label for="number">card number</label>
+            <div class="input">
+              <input
+                type="text"
+                id="number"
+                maxlength="20"
+                placeholder="e.g 1234 5678 9123 0000"
+              />
+            </div>
+            <p class="validation">Please Enter a value</p>
+          </div>
+          <div class="date-cvc">
+            <div class="date">
+              <label for="month">exp. date (mm/yy)</label>
+              <div class="input">
+                <input type="text" id="month" maxlength="2" placeholder="MM" />
+              </div>
+              <div class="input">
+                <input type="text" id="year" maxlength="2" placeholder="YY" />
+              </div>
+              <p class="validation">Please enter a value</p>
+            </div>
+            <div class="cvc">
+              <label for="cvc">cvc</label>
+              <div class="input">
+                <input
+                  type="text"
+                  id="cvc"
+                  maxlength="3"
+                  placeholder="e.g 123"
+                />
+              </div>
+              <p class="validation">Please enter a value</p>
+            </div>
+          </div>
+          <button type="submit" id="submit">Confirm</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
