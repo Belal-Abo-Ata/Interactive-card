@@ -126,7 +126,7 @@ cvc.addEventListener('blur', function () {
   check(this, 'Please enter a valid cvc number', 5);
 });
 
-document.querySelectorAll('input').forEach((el) => {
+document.querySelectorAll('input').forEach(el => {
   el.addEventListener('focus', () => {
     el.parentElement.classList.remove('show');
     el.classList.remove('error');

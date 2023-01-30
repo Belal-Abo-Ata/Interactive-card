@@ -130,13 +130,8 @@ body {
   position: absolute;
   inset: 0;
   padding: 1rem;
-  border: 1px solid transparent;
+  border: 1px solid var(--very-dark-violet);
   border-radius: 0.5rem;
-  background: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%))
-    border-box;
-  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
   z-index: 1;
   pointer-events: none;
 }
